@@ -27,5 +27,4 @@
   </a>
 </p>
 
-<a href="https://www.buymeacoffee.com/ankushsingh"><img src="footer.jpg"></a>
 
