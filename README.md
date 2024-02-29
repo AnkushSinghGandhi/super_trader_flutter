@@ -27,10 +27,6 @@
   </a>
 </p>
 
-Certainly! Here's an updated README.md file with more emphasis on the backend:
-
----
-
 # Super Trader Flutter
 
 Welcome to **Super Trader Flutter**, a mobile trading app built with Flutter for trading stocks and managing portfolios on the go. This app provides users with a convenient way to buy, sell, and track stocks using their mobile devices.
@@ -129,7 +125,3 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 For any questions or assistance, feel free to contact the project maintainer at [ankushsinghgandhi@gmail.com](mailto:your-ankushsinghgandhi@gmail.com).
 
 Thank you for using Super Trader Flutter! Happy trading!
-
---- 
-
-This README.md file now provides detailed instructions for setting up and running the backend server, giving it more importance in the context of the overall application.
