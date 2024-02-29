@@ -29,7 +29,7 @@
 
 # Super Trader Flutter
 
-Welcome to **Super Trader Flutter**, a mobile trading app built with Flutter for trading stocks and managing portfolios on the go. This app provides users with a convenient way to buy, sell, and track stocks using their mobile devices.
+Super Trader App is a Flutter based application designed for trading stocks. It allows users to view real-time & historic stock prices, make purchases, and track their transaction history. Additionally, the admin panel provides features for managing user accounts, monitoring transactions, and more.
 
 ## Features
 
