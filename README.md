@@ -1,4 +1,4 @@
-<a href="https://www.buymeacoffee.com/ankushsingh"><img src="header.jpg"></a>
+<a href="https://warriorwhocodes.com"><img src="header.jpg"></a>
 
 <p align="center">
   <a href="https://ankushsinghgandhi.github.io">
