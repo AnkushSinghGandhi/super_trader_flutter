@@ -1,0 +1,35 @@
+# Flutter/Dart specific
+**/ios/Flutter/.last_build_id
+**/ios/Flutter/App.framework
+**/ios/Flutter/App.framework.dSYM
+**/ios/Flutter/flutter_assets.dSYM
+**/ios/Flutter/flutter_export_environment.sh
+**/ios/Pods
+**/ios/.symlinks
+**/ios/Flutter/Flutter.podspec
+**/ios/.flutter-plugins
+**/ios/.flutter-plugins-dependencies
+**/android/.gradle
+**/android/.idea
+**/android/.metadata
+**/android/build
+**/android/local.properties
+**/android/gradle.properties
+**/android/gradlew
+**/android/gradlew.bat
+**/android/gradle-wrapper.jar
+**/android/gradle/
+**/android/captures/
+**/android/app/build
+**/android/Flutter/.last_build_id
+**/android/Flutter/app.generated.xcconfig
+**/android/Flutter/flutter_export_environment.sh
+**/android/Flutter/flutter_assets.dSYM
+**/build/
+.dart_tool/
+.flutter-plugins
+.packages
+.pub/
+/build/
+# Mac OS specific
+.DS_Store
