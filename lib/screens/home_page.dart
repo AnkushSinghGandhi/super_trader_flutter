@@ -1,15 +1,14 @@
-// home_page.dart
-
 import 'package:flutter/material.dart';
-import 'drawer.dart';
-import 'api.dart';
+import '../widgets/drawer_widget.dart';
+import '../widgets/ltp_tile.dart';
+import '../services/api_service.dart';
 
-class MyHomePage extends StatefulWidget {
+class HomePage extends StatefulWidget {
   @override
-  _MyHomePageState createState() => _MyHomePageState();
+  _HomePageState createState() => _HomePageState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _HomePageState extends State<HomePage> {
   List<String> options = [
     'Trade',
     'News',
@@ -83,32 +82,6 @@ class _MyHomePageState extends State<MyHomePage> {
     // ... (Your existing option handling logic)
   }
 
-  Widget buildLTP(BuildContext context, String identifier) {
-    return ListTile(
-      title: Text(
-        identifier,
-        style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-      ),
-      subtitle: Text('Last updated: ${DateTime.now()}'),
-      trailing: Column(
-        crossAxisAlignment: CrossAxisAlignment.end,
-        children: [
-          Text(
-            'Last Trade Price: ${ltpValues[identifier] ?? 'N/A'}',
-            style: TextStyle(color: Colors.blue),
-          ),
-          IconButton(
-            icon: Icon(Icons.remove_circle),
-            color: Colors.red,
-            onPressed: () {
-              removeInstrumentIdentifier(identifier);
-            },
-          ),
-        ],
-      ),
-    );
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -139,7 +112,11 @@ class _MyHomePageState extends State<MyHomePage> {
       body: ListView.builder(
         itemCount: instrumentIdentifiers.length,
         itemBuilder: (context, index) {
-          return buildLTP(context, instrumentIdentifiers[index]);
+          return LtpTile(
+            identifier: instrumentIdentifiers[index],
+            ltpValue: ltpValues[instrumentIdentifiers[index]],
+            onRemove: () => removeInstrumentIdentifier(instrumentIdentifiers[index]),
+          );
         },
       ),
       bottomNavigationBar: BottomNavigationBar(
