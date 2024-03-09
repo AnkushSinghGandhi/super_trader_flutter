@@ -1,4 +1,4 @@
-<a href="https://warriorwhocodes.com"><img src="https://github.com/AnkushSinghGandhi/MyGraphicsWork/blob/main/warrior%20who%20codes/header.jpg"></a>
+<a href="https://warriorwhocodes.com"><img src="repo_images/header.jpg"></a>
 
 <p align="center">
   <a href="https://ankushsinghgandhi.github.io">
