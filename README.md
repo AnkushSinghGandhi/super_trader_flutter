@@ -36,7 +36,7 @@ Super Trader App is a Flutter based application designed for trading stocks. It 
 - **User Authentication:** Users can register, login, and securely manage their accounts.
 - **Stock Trading:** Buy and sell stocks with real-time market data.
 - **Portfolio Management:** Track the stocks you own, view purchase history, and analyze performance.
-- **Favorite Stocks:** Add and remove favorite stocks for quick access.
+- **Watchlist:** Add and remove stocks into watchlist for quick access.
 - **Push Notifications:** Receive alerts for price changes and important updates.
 - **Offline Mode:** Access app features and view cached data even without an internet connection.
 
