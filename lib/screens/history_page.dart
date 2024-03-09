@@ -2,17 +2,17 @@ import 'package:flutter/material.dart';
 import '../widgets/drawer_widget.dart'; // Import the custom drawer widget
 
 class HistoryPage extends StatelessWidget {
-  final List<String>? purchaseHistory;
+  final List<String> purchaseHistory;
 
-  HistoryPage({this.purchaseHistory});
+  HistoryPage({required this.purchaseHistory});
 
-  List<String> options = [
-    'Market',
-    'Trade',
-    'History',
-    'Profile',
-    'About',
-    'Logout',
+  List<Map<String, dynamic>> options = [
+    {'title': 'Market', 'icon': Icons.bar_chart},
+    {'title': 'Trade', 'icon': Icons.show_chart},
+    {'title': 'History', 'icon': Icons.history},
+    {'title': 'Profile', 'icon': Icons.account_circle_outlined},
+    {'title': 'About', 'icon': Icons.info},
+    {'title': 'Logout', 'icon': Icons.logout},
   ];
 
   @override
@@ -21,7 +21,10 @@ class HistoryPage extends StatelessWidget {
       backgroundColor: Color.fromARGB(255, 17, 19, 23),
       appBar: AppBar(
         backgroundColor: Colors.transparent,
-        title: Text('History', style: TextStyle(fontSize: 18, color: Colors.white)),
+        title: Text(
+          'History',
+          style: TextStyle(fontSize: 18, color: Colors.white),
+        ),
         iconTheme: IconThemeData(color: Colors.white),
         leading: Builder(
           builder: (context) => IconButton(
@@ -34,7 +37,7 @@ class HistoryPage extends StatelessWidget {
       ),
       drawer: DrawerWidget(
         options: options,
-        onOptionSelected: (option) {
+        onOptionSelected: (context, option) {
           Scaffold.of(context).openDrawer(); // Open the drawer using the context provided by the Builder
         },
       ),
@@ -45,15 +48,16 @@ class HistoryPage extends StatelessWidget {
           children: [
             Text(
               'Purchase History',
-              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white),
+              style: TextStyle(
+                  fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white),
             ),
             SizedBox(height: 20),
             Expanded(
               child: ListView.builder(
-                itemCount: purchaseHistory?.length ?? 0,
+                itemCount: purchaseHistory.length,
                 itemBuilder: (context, index) {
                   return ListTile(
-                    title: Text(purchaseHistory![index]),
+                    title: Text(purchaseHistory[index]),
                   );
                 },
               ),
